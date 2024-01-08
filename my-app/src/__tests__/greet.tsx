@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { Greet } from '../components/greet/greet';
 
 describe("Greet Component", ()=>{
-  fit("rendered", ()=> {
+  test("rendered", ()=> {
     render(<Greet />);
     const greetingElement = screen.getByText("Hello");
     expect(greetingElement).toBeInTheDocument();
